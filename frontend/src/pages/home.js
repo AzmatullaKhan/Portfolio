@@ -16,7 +16,7 @@ export const Home=()=>{
     }
     return(
         <div>
-            <div className='cursor-round' style={{zIndex:"999"}}><div className='cursor-dot'></div></div>
+            {/* <div className='cursor-round' style={{zIndex:"999"}}><div className='cursor-dot'></div></div> */}
             <div className='main'>
                 <div className='mini-main' >
                     <img className='img1' src={book} alt='img'/>

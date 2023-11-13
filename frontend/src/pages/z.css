@@ -1,11 +1,14 @@
 
 .main{
-    height:870px;
-    min-width:1500px;
+    min-height:fit-content;
+    min-width:1494px;
     color: #fff;
     background-color: #d19e72;
     box-sizing: border-box;
-    overflow: scroll
+    /* overflow: scroll; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 div h1{
     position:absolute;
@@ -15,6 +18,14 @@ div h1{
     width:1500px;
     height: 870px;
     background-color: #d19e72;
+     position: relative;
+     top:40px
+    /*top:50%;
+    left: 50%; */
+    /* border-style: solid; */
+    /* border-width: 1;
+    border-color: #000;
+    margin: auto auto; */
 }
 .mini-main::-webkit-scrollbar{
     display: none;
@@ -64,7 +75,7 @@ img{
     100%{top:240px}
 }
 .img2{
-    /* top:10px; */
+    top:0px;
     height:820px;
     width:660px;
     left:420px;
@@ -77,8 +88,15 @@ img{
     75%{top:0}
     100% {top:0px}
 }
+.laptop-head1{
+    position: absolute;
+    z-index: 9999;
+    font-size:21px;
+    top:440px;
+    left:520px;
+}
 .img3{
-    /* top:10; */
+    top:0;
     left:1080px;
     height:350px;
     width:400px;
