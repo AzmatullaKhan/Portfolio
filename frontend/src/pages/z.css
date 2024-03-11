@@ -47,18 +47,82 @@ img{
     75%{top:0}
     100% {top:0px}
 }
+.profile-img{
+    left: 200px;
+    top:176px;
+    height:60px;
+    width:60px;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: profile-img-animation 2s;
+}
+@keyframes profile-img-animation {
+    0%{top:-700px}
+    50% {top:206px}
+    75%{top:176}
+    100% {top:176px}
+}
 .book-head{
     z-index: 99;
     top:80px;
     left:160px;
     font-size: 16px;
     animation: book-head-animation 2s;
+    transition: all 0s;
+    height: auto;
+    /* border: solid 1px #000;   */
+}
+.book-head:hover{
+    ~.aboutme-main{
+        display: block;
+        animation: aboutme-main-animation-open 1.7s ease ;
+    }
+    ~.img3{
+        display: none;
+        animation: close-img3 1.5s;
+    }
+    ~.img6{
+        display: none;
+        animation: close-img6 1.5s;
+    }
+}
+@keyframes aboutme-main-animation-open {
+    0%{left: 1400px}
+    50%{left:1070px}
+    75%{left:1080px}
+    100%{left:1080px}
+}
+@keyframes close-img3 {
+    0%{display: block;}
+    100%{left:2000px}
+}
+@keyframes close-img6 {
+    0%{display: block;}
+    100%{top:2000px}
 }
 @keyframes book-head-animation {
     0%{top:-800px}
     50%{top: 100px}
     75%{top:80px}
     100%{top:80px}
+}
+.aboutme-main{
+    color: green;
+    height:800px;
+    width:410px;
+    position: relative;
+    top:0;
+    left:1080px;
+    border: solid 1px #000;
+    display: none;
+    background-color: transparent;
+    z-index: 9999;
+    animation: aboutme-main-animation-close 1.7s ease ;
+
+}
+@keyframes aboutme-main-animation-close {
+    0%{display: block;}
+    100%{left:2000px}
 }
 .book-desc{
     padding:4px 0px;
@@ -92,9 +156,6 @@ img{
     position: absolute;
     height: 240px;
     width: 456px;
-    /* border-color: #fff;
-    border-style: solid;
-    border-width: 4px; */
     z-index: 3;
     font-size:21px;
     padding: 20px;
@@ -106,9 +167,6 @@ img{
 .laptop-div-mini{
     height:100%;
     width:100%;
-    /* border-color: #fff;
-    border-style: solid;
-    border-width: 4px; */
     padding: 0px 20px;
     box-sizing: border-box;
     overflow-y:scroll ;
@@ -276,7 +334,6 @@ img{
 }
 @keyframes image-mail-animation{
     0%{top:1700px}
-    /* 50% {top:0px} */
     100% {top:680px}
 }
 .mail{
@@ -336,4 +393,106 @@ img{
     border-radius: 50%;
     background-color: #000;
     position: inherit;
+}
+.document-head1{
+    top:390px;
+    left:1180px;
+    font-size: 16px;
+    z-index: 9;
+    color: #000;
+    animation: document-head1-animation 2s;
+}
+.document-head2{
+    top:415px;
+    left:1180px;
+    font-size: 16px;
+    z-index: 9;
+    color: #000;
+    animation: document-head2-animation 2s;
+}
+.document-head3{
+    top:440px;
+    left:1180px;
+    font-size: 16px;
+    z-index: 9;
+    color: #000;
+    animation: document-head3-animation 2s;
+}
+@keyframes document-head1-animation {
+    0%{top:1800px}
+    50% {top:375px}
+    75%{top:390px}
+    100% {top:390px}
+}
+@keyframes document-head2-animation {
+    0%{top:1800px}
+    50%{top: 400px}
+    75%{top:415px}
+    100%{top:415px}
+}
+@keyframes document-head3-animation {
+    0%{top:1800px}
+    50%{top: 425px}
+    75%{top:440px}
+    100%{top:440px}
+}
+.document-takeMe{
+    position: absolute;
+    top:508px;
+    left:1190px;
+    z-index: 99;
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+    animation: document-takeMe-animation 2s;
+}
+@keyframes document-takeMe-animation {
+    0%{top:1800px}
+    50%{top: 493px}
+    75%{top:508px}
+    100%{top:508px}
+}
+.document-project1{
+    top:540px;
+    left: 1180px;
+    animation: document-project1-animation 2s;
+}
+@keyframes document-project1-animation {
+    0%{top:1800px}
+    50%{top: 525px}
+    75%{top:540px}
+    100%{top:540px}
+}
+.document-project2{
+    top:570px;
+    left: 1180px;
+    animation: document-project2-animation 2s;
+}
+@keyframes document-project2-animation {
+    0%{top:1800px}
+    50%{top: 555px}
+    75%{top:570px}
+    100%{top:570px}
+}
+.document-project3{
+    top:600px;
+    left: 1180px;
+    animation: document-project3-animation 2s;
+}
+@keyframes document-project3-animation {
+    0%{top:1800px}
+    50%{top: 585px}
+    75%{top:600px}
+    100%{top:600px}
+}
+.document-project4{
+    top:625px;
+    left: 1180px;
+    animation: document-project4-animation 2s;
+}
+@keyframes document-project4-animation {
+    0%{top:1800px}
+    50%{top: 615px}
+    75%{top:625px}
+    100%{top:625px}
 }
