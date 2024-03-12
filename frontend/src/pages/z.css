@@ -85,6 +85,42 @@ img{
         display: none;
         animation: close-img6 1.5s;
     }
+    ~.scroll{
+        display: none;
+        animation: close-img6 1.5s;
+    }
+    ~.document-project1{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-project2{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-project3{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-project4{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-takeMe{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-head1{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-head2{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
+    ~.document-head3{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
 }
 @keyframes aboutme-main-animation-open {
     0%{left: 1400px}
@@ -99,6 +135,10 @@ img{
 @keyframes close-img6 {
     0%{display: block;}
     100%{top:2000px}
+}
+@keyframes close-document-projects {
+    0%{display: block;}
+    100%{top:1500px}
 }
 @keyframes book-head-animation {
     0%{top:-800px}
@@ -475,15 +515,15 @@ img{
     100%{top:570px}
 }
 .document-project3{
-    top:600px;
+    top:598px;
     left: 1180px;
     animation: document-project3-animation 2s;
 }
 @keyframes document-project3-animation {
     0%{top:1800px}
     50%{top: 585px}
-    75%{top:600px}
-    100%{top:600px}
+    75%{top:598px}
+    100%{top:598px}
 }
 .document-project4{
     top:625px;

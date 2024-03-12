@@ -110,7 +110,6 @@ export const Home=()=>{
                     <a href='https://github.com/AzmatullaKhan/Tourism-And-Hospitality-Management-ReactProject' className='document-project2 document-takeMe'>2.  Hotel Website</a>
                     <a href='https://github.com/AzmatullaKhan/Portfolio' className='document-project3 document-takeMe'>3.  Portfoli(current)</a>
                     <a href='https://github.com/AzmatullaKhan/Internship_Swecha-Project' className='document-project4 document-takeMe'>4.  Map of India</a>
-         
                 </div>
             </div>
         </div>
