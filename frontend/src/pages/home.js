@@ -10,8 +10,8 @@ import pen from '../images/pen.png'
 import instagram from '../images/instagram.jpg'
 import linkedIn from '../images/linkedIn.png'
 import github from '../images/github.png'
-import mail from '../images/mail.png'
 import azmatulla from '../images/azmatulla.jpg'
+import signature from '../images/signature.png'
 import { AboutMe } from './aboutme';
 
 
@@ -97,10 +97,6 @@ export const Home=()=>{
                         <img src={github} className='image-github' alt='github'/>
                         <a href='https://github.com/AzmatullaKhan' className='github'>GitHub</a>
                     </div>
-                    <div style={{display:"flex"}}>
-                        <img src={mail} className='image-mail' alt='mail'/>
-                        <h1 className='mail'>kk258786@gmail<br></br>.com</h1>
-                    </div>
                     <img className='img6' src={document} alt='img'/>
                     <h1 className='document-head1'>Want to spend some</h1>
                     <h1 className='document-head2'>time on checking my</h1>
@@ -110,6 +106,7 @@ export const Home=()=>{
                     <a href='https://github.com/AzmatullaKhan/Tourism-And-Hospitality-Management-ReactProject' className='document-project2 document-takeMe'>2.  Hotel Website</a>
                     <a href='https://github.com/AzmatullaKhan/Portfolio' className='document-project3 document-takeMe'>3.  Portfoli(current)</a>
                     <a href='https://github.com/AzmatullaKhan/Internship_Swecha-Project' className='document-project4 document-takeMe'>4.  Map of India</a>
+                    <img src={signature} className='signature' alt='signature'/>
                 </div>
             </div>
         </div>

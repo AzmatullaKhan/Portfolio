@@ -121,6 +121,10 @@ img{
         display: none;
         animation: close-document-projects 1.5s;
     }
+    ~.signature{
+        display: none;
+        animation: close-document-projects 1.5s;
+    }
 }
 @keyframes aboutme-main-animation-open {
     0%{left: 1400px}
@@ -147,17 +151,26 @@ img{
     100%{top:80px}
 }
 .aboutme-main{
-    color: green;
+    color: #fff;
+    text-align: center;
     height:800px;
     width:410px;
     position: relative;
     top:0;
     left:1080px;
-    border: solid 1px #000;
     display: none;
     background-color: transparent;
+    font-size: 17.5px;
+    font-weight: bold;
     z-index: 9999;
     animation: aboutme-main-animation-close 1.7s ease ;
+}
+span{
+    text-decoration: underline;
+}
+strong{
+    color: #000;
+    text-decoration: underline;
 
 }
 @keyframes aboutme-main-animation-close {
@@ -364,35 +377,12 @@ img{
     text-decoration: none;
     animation: sides-animation 2.7s;
 }
-.image-mail{
-    height:30px;
-    width:40px;
-    top:680px;
-    left:200px;
-    border-radius:50%;
-    animation: image-mail-animation 2.8s;
-}
-@keyframes image-mail-animation{
-    0%{top:1700px}
-    100% {top:680px}
-}
-.mail{
-    position:absolute;
-    top:688px;
-    left:246px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 14px;
-    font-weight:100;
-    animation: sides-animation 2.9s;
-}
 .img6{
     top:345px;
     left:1080px;
     height:474px;
     width:400px;
     animation: img6-animation 2.5s;
-
 }
 @keyframes img6-animation {
     0%{top:1000px}
@@ -535,4 +525,19 @@ img{
     50%{top: 615px}
     75%{top:625px}
     100%{top:625px}
+}
+.signature{
+    position: absolute;
+    top: 710px;
+    left: 1170px;
+    z-index: 999999;
+    height:35px;
+    width: 120px;
+    animation:document-signature-animation 2s ;
+}
+@keyframes document-signature-animation {
+    0%{top:1800px}
+    50%{top: 695px}
+    75%{top:710px}
+    100%{top:710px}
 }
