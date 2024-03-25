@@ -13,7 +13,7 @@ import github from '../images/github.png'
 import azmatulla from '../images/azmatulla.jpg'
 import signature from '../images/signature.png'
 import { AboutMe } from './aboutme';
-
+import { Snake } from './games/snake.js'
 
 export const Home=()=>{
 
@@ -61,12 +61,16 @@ export const Home=()=>{
   
     return <div className="laptop-div-mini"><h1>{part}</h1></div>;
   };
-  
-      
-    const handleBookClick=()=>{
-        console.log('clicked')
+
+    const [isHidden, setHidden]= useState(false);
+    const [i, setI]=useState(0);
+    const handleHidden=()=>{
+      if(i%2===0)
+        setHidden(true)
+      else
+        setHidden(false)
+      setI(i+1);
     }
-    
     return(
         <div>
             {/* <div className='cursor-round' style={{zIndex:"999"}}><div className='cursor-dot'></div></div> */}
@@ -74,14 +78,29 @@ export const Home=()=>{
                 <div className='mini-main' >
                     <img className='img1' src={book} alt='img'/>
                     <img className='profile-img' src={azmatulla} alt='profiles'/>
-                    <h1 className='book-head' onClick={handleBookClick}>Azmatulla Khan<center><br></br><br></br>About me</center></h1>
+                    <h1 className='book-head'>Azmatulla Khan<center><br></br><br></br>About me</center></h1>
                     <AboutMe />
                     <h1 className='book-desc'>I am interested<br></br>in full stack <br></br>development and <br></br> Software Devops</h1>
                     <img className='img2' src={laptop} alt='img'/>
                     <div className='laptop-div'>
                         <WordAnimation />
                     </div>
+                    {isHidden && 
+                      <div className='hidden' id='hiddenElement'>
+                        <Snake />
+                      </div>
+                    }
                     <img className='img3' src={coffee} alt='img'/>
+                    <div className='coffee-desc' onClick={handleHidden}>
+                      <span className='one_1'>P</span>
+                      <span className='one_2'>l</span>
+                      <span className='one_3'>a</span>
+                      <span className='one_4'>y</span>
+                      <span className='one_5'>G</span>
+                      <span className='one_6'>a</span>
+                      <span className='one_7'>m</span>
+                      <span className='one_8'>e</span>
+                    </div>
                     <img className='img4' src={pen} alt='img'/>
                     <img className='img5' src={mobile} alt='img'/>
                     <h1 className='mobile-head'>Contact Details</h1>

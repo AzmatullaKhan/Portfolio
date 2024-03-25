@@ -235,6 +235,15 @@ strong{
     75%{top:0}
     100% {top:0px}
 }
+.hidden{
+    position: absolute;
+    top:95px;
+    left:523px;
+    height:240px;
+    width:450px;
+    background-color: #676667;
+    z-index: 9999;
+}
 .animate-text {
     animation: revealText 1s ease-in-out 2s forwards;
     display: inline-block;
@@ -264,6 +273,26 @@ strong{
     50% {left:1060px}
     75%{left:1080}
     100% {left:1080px}
+}
+.coffee-desc{
+    position: absolute;
+    top:200px;
+    left:1230px;
+    height:130px;
+    width:50px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span{
+    text-decoration: none;
+    font-size: 15px;
+}
+.one_4{
+    margin-bottom: 10px;
 }
 .img4{
     top:400px;
