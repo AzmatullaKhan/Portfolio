@@ -139,7 +139,7 @@ export const Home=()=>{
                     <a href='https://github.com/AzmatullaKhan' className='document-takeMe'>Take me</a>
                     <a href='https://moviemate.pythonanywhere.com/' className='document-project1 document-takeMe'>1.  Movies Website</a>
                     <a href='https://github.com/AzmatullaKhan/Tourism-And-Hospitality-Management-ReactProject' className='document-project2 document-takeMe'>2.  Hotel Website</a>
-                    <a href='https://github.com/AzmatullaKhan/Portfolio' className='document-project3 document-takeMe'>3.  Portfoli(current)</a>
+                    <a href='https://portfolio-y929.onrender.com/' className='document-project3 document-takeMe'>3.  Portfoli(current)</a>
                     <a href='https://github.com/AzmatullaKhan/Internship_Swecha-Project' className='document-project4 document-takeMe'>4.  Map of India</a>
                     <img src={signature} className='signature' alt='signature'/>
                 </div>
