@@ -125,6 +125,10 @@ img{
         display: none;
         animation: close-document-projects 1.5s;
     }
+    ~.coffee-desc{
+        display: none;
+        animation: close-coffee-desc 1.5s;
+    }
 }
 @keyframes aboutme-main-animation-open {
     0%{left: 1400px}
@@ -286,6 +290,17 @@ strong{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: open-coffee-desc 2s;
+}
+@keyframes open-coffee-desc {
+    0%{opacity: 0; top:-700px}
+    50%{opacity: 0.75; top:220px}
+    75%{opacity: 0.75;top:200px}
+    100%{top:200px;}
+}
+@keyframes close-coffee-desc {
+    0%{display: flex;flex-direction: column;height:130px}
+    100%{top:-700px; height: 130px;}
 }
 span{
     text-decoration: none;

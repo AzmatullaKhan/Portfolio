@@ -65,10 +65,12 @@ export const Home=()=>{
     const [isHidden, setHidden]= useState(false);
     const [i, setI]=useState(0);
     const handleHidden=()=>{
-      if(i%2===0)
+      if(i%2===0){
         setHidden(true)
-      else
+      }
+      else{
         setHidden(false)
+      }
       setI(i+1);
     }
     return(
@@ -91,7 +93,20 @@ export const Home=()=>{
                       </div>
                     }
                     <img className='img3' src={coffee} alt='img'/>
-                    <div className='coffee-desc' onClick={handleHidden}>
+                    {isHidden && 
+                      <div className='coffee-desc' onClick={handleHidden}>
+                      <span className='one_1'>E</span>
+                      <span className='one_2'>x</span>
+                      <span className='one_3'>i</span>
+                      <span className='one_4'>t</span>
+                      <span className='one_5'>G</span>
+                      <span className='one_6'>a</span>
+                      <span className='one_7'>m</span>
+                      <span className='one_8'>e</span>
+                    </div>
+                    }
+                    {!isHidden && 
+                      <div className='coffee-desc' onClick={handleHidden}>
                       <span className='one_1'>P</span>
                       <span className='one_2'>l</span>
                       <span className='one_3'>a</span>
@@ -101,6 +116,7 @@ export const Home=()=>{
                       <span className='one_7'>m</span>
                       <span className='one_8'>e</span>
                     </div>
+                    }
                     <img className='img4' src={pen} alt='img'/>
                     <img className='img5' src={mobile} alt='img'/>
                     <h1 className='mobile-head'>Contact Details</h1>
